@@ -1,0 +1,6 @@
+{
+    "title": "Own fake auth server",
+    "authURL": "<YOUR_SERVER_EXAMPLE_URI>",
+    "tokenURL": "<YOUR_SERVER_EXAMPLE_URI>",
+    "redirectURL": "<YOUR_SERVER_EXAMPLE_URI>"
+}

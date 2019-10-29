@@ -1,0 +1,34 @@
+{
+  "name": "Sample Connector",
+  "description": "Sample Connector",
+  "triggers": [
+    "/v1/samplepollingtrigger"
+  ],
+  "actions": [
+    "/v1/echo",
+    "/v1/advancedecho"
+  ],
+  "version": 1,
+  "auth_type": "custom",
+  "docs_link": "http://docs.example.com",
+  "appId": "707e9fd0-d3ce-491c-887e-71851456d25b",
+  "guid": "22ac97e6-546e-423a-9e9b-d86b26ad10bb",
+  "connectionUid": "sampleconnector_1565269287357",
+  "lookup": true,
+  "lookup_attachments": [
+    {
+      "lookup_id": "getsampleoptions",
+      "action_id": "/v1/echo",
+      "field_id": "status",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "getdynamicoptions",
+      "action_id": "/v1/advancedecho",
+      "field_id": "secondInput",
+      "dependencies": [
+        "firstInput"
+      ]
+    }
+  ]
+}
