@@ -1,8 +1,8 @@
-# [webMethods.io Integration](https://webmethods.io) Custom Connector Basic Example
+# [webMethods.io Integration](https://webmethods.io) Custom Connector Example
 
 [webMethods.io Integration](https://webmethods.io) is a powerful integration platform as a service (iPaaS) that provides a combination of capabilities offered by ESBs, data integration systems, API management tools, and B2B gateways.
 
-You can create custom web connectors for [webMethods.io](http://webMethods.io) Integration using the Connector Builder.
+You can create custom web connectors for [webMethods.io Integration](https://webmethods.io) using the Connector Builder.
 
 You can find further details about the Connector Builder under [https://docs.webmethods.io/developer-guide/connector-builder](https://docs.webmethods.io/developer-guide/connector-builder)
 
@@ -79,7 +79,7 @@ The _'secondInput'_ field of the action will be passed as well to the lookup eve
 
 ### Custom Authentication
 
-Most of the action/triggers need some sort of authentication from users to function. [webMethods.io](http://webMethods.io) Integration provides some methods to help add authentication for your them. There are some OOTB methods provided by the platform (Basic, OAuth...), but you can also create your own one, as it is shown here.
+Most of the action/triggers need some sort of authentication from users to function. [webMethods.io Integration](https://webmethods.io) provides some methods to help add authentication for your them. There are some OOTB methods provided by the platform (Basic, OAuth...), but you can also create your own one, as it is shown here.
 
 ## Getting started
 
