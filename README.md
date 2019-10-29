@@ -26,7 +26,7 @@ Actions define the tasks to be performed by the connector inside an integration 
 In the "echo" action, you can see the available data types that can be used as input for an action and how to generate the options for an input field based on the results of a service call (by using lookups).
 
 ##### advancedecho
-In the "advancedecho" action, you can see how to make input options dependant from another input fields using lookups.
+In the "advancedecho" action, you can see how to make input options dependent from another input fields using lookups.
 
 ***
 
@@ -42,7 +42,7 @@ This lookup produces an static result, as it can be seen below, which will gener
 
 ##### getdynamicoptions
 
-It shows how the output of the lookup can be made dependant from another input parameter that comes from the action where the lookup is used. This dependency is configured automatically when the lookup is attached to the action using the CLI (for it, follow the instruction provided in the command line).
+It shows how the output of the lookup can be made dependent from another input parameter that comes from the action where the lookup is used. This dependency is configured automatically when the lookup is attached to the action using the CLI (for it, follow the instruction provided in the command line).
 
 ```
 $ wmio create lookup samplelookup
@@ -88,8 +88,8 @@ Once you have read the information about the [Connector Builder](https://docs.we
 You need to use the folder "src" as the root folder for using the **webMethods** **.io** Command Line Interface.
 
 ```
-<span class="hljs-built_in">cd</span> src
-wmio <span class="hljs-built_in">test</span>
+cd src
+wmio test
 ...
 wmio deploy
 ```
