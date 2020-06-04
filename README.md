@@ -10,7 +10,7 @@ You can find further details about the Connector Builder under [https://docs.web
 
 ***
 
-### Trigger
+## Trigger
 
 A trigger is a powerful tool that automatically launches a workflow when a defined event happens. This enables you to automate complex business process without having to manually run the workflow every time. You can find detailed information about how triggers work under https://docs.webmethods.io/workflow-building-blocks/triggers
 
@@ -18,14 +18,16 @@ In this example, you will find a polling trigger. It will run the _"execute"_ me
 
 ***
 
-### Actions
+## Actions
 
 Actions define the tasks to be performed by the connector inside an integration flow. In this connector you can find two actions:
 
-##### echo
+### echo
+
 In the "echo" action, you can see the available data types that can be used as input for an action and how to generate the options for an input field based on the results of a service call (by using lookups).
 
-##### advancedecho
+### advancedecho
+
 In the "advancedecho" action, you can see how to make input options dependent from another input fields using lookups.
 
 ***
@@ -34,17 +36,17 @@ In the "advancedecho" action, you can see how to make input options dependent fr
 
 Lookup helps you autofill input fields with data coming from your account or other remote resources. You will find three lookups in this example:
 
-##### getsampleoptions
+#### getsampleoptions
 
 This lookup produces an static result, as it can be seen below, which will generate a dropdown field with two values. The _"value"_ property is used as label by the dropdown, while the _"id"_ is passed as the value into the property.
 
 `[{"id": "true","value": "True"},{"id": "false","value": "False"}]`
 
-##### getdynamicoptions
+#### getdynamicoptions
 
 It shows how the output of the lookup can be made dependent from another input parameter that comes from the action where the lookup is used. This dependency is configured automatically when the lookup is attached to the action using the CLI (for it, follow the instruction provided in the command line).
 
-```
+```command
 $ wmio create lookup samplelookup
 ? Does your lookup have searchable feature No
 [mytenant:myname] lookup samplelookup created successfully
@@ -64,7 +66,7 @@ $ wmio attach lookup
 
 A lookup can be used as well to generate input parameters at runtime. For this, the lookup will not be attached to an action via the CLI. Instead, it will be manually configured inside the action as a _'form'_ like:
 
-```
+```json
 input: {...}
 form: {
     id: "getadditionalinput",
@@ -83,11 +85,11 @@ Most of the action/triggers need some sort of authentication from users to funct
 
 ## Getting started
 
-Once you have read the information about the [Connector Builder](https://docs.webmethods.io/developer-guide/connector-builder), and installed all prerequisites, you should be able to test and deploy the example into your [webMethods.io](http://webMethods.io) instance.
+Once you have read the information about the [Connector Builder](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0), and installed all prerequisites, you should be able to test and deploy the example into your [webMethods.io](http://webMethods.io) instance.
 
 You need to use the folder "src" as the root folder for using the **webMethods** **.io** Command Line Interface.
 
-```
+```command
 cd src
 wmio test
 ...
