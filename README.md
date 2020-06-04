@@ -6,7 +6,7 @@ This is an example of a custom connector for [webMethods.io Integration](https:/
 
 You can create custom web connectors for [webMethods.io Integration](https://webmethods.io) using the Connector Builder. The Connector Builder app is a custom Node.js application that you build using a web application’s APIs. So, for example, if you have a private API or an API that is not in webMethods.io Integration yet, you can create custom webMethods.io Integration actions and triggers for those APIs. Once you have created these custom actions and triggers, you can use them like any other action on webMethods.io integration platform.
 
-Follow the linke to find further details about the [Connector Builder](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0)
+Follow the link to find further details about the [Connector Builder](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0)
 
 ***
 
