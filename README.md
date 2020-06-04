@@ -6,13 +6,13 @@ This is an example of a custom connector for [webMethods.io Integration](https:/
 
 You can create custom web connectors for [webMethods.io Integration](https://webmethods.io) using the Connector Builder. The Connector Builder app is a custom Node.js application that you build using a web application’s APIs. So, for example, if you have a private API or an API that is not in webMethods.io Integration yet, you can create custom webMethods.io Integration actions and triggers for those APIs. Once you have created these custom actions and triggers, you can use them like any other action on webMethods.io integration platform.
 
-You can find further details about the Connector Builder under [https://docs.webmethods.io/developer-guide/connector-builder](https://docs.webmethods.io/developer-guide/connector-builder)
+Follow the linke to find further details about the [Connector Builder](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0)
 
 ***
 
 ## Trigger
 
-A trigger is a powerful tool that automatically launches a workflow when a defined event happens. This enables you to automate complex business process without having to manually run the workflow every time. You can find detailed information about how triggers work under https://docs.webmethods.io/workflow-building-blocks/triggers
+A trigger is a powerful tool that automatically launches a workflow when a defined event happens. This enables you to automate complex business process without having to manually run the workflow every time. You can find detailed information about how triggers work under <https://docs.webmethods.io/integration/developer_guide/connector_builder/#triggers>
 
 In this example, you will find a polling trigger. It will run the _"execute"_ method every five minutes.
 
@@ -53,9 +53,9 @@ $ wmio create lookup samplelookup
 
 $ wmio attach lookup
 ? Select the lookup you want to attach samplelookup
-? Do you want to setup lookup <span class="hljs-keyword">for</span> an action field Yes
-? Do you want to setup lookup <span class="hljs-keyword">for</span> an trigger field No
-? Select the action you want to <span class="hljs-built_in">enable</span> lookup <span class="hljs-keyword">for</span> /v1/advancedecho
+? Do you want to setup lookup for an action field Yes
+? Do you want to setup lookup for an trigger field No
+? Select the action you want to enable lookup for /v1/advancedecho
 ? Select the field you want to attach the lookup to secondInput
 ? Lookup needs dependencies of other input fields Yes
 ? Select dependency fields firstInput
